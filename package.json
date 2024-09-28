@@ -1,0 +1,15 @@
+{
+  "name": "uword",
+  "version": "1.0.0",
+  "description": "Biblical software for studying scripture and consult many resources",
+  "main": "index.html",
+  "scripts": {
+    "dev": "sergey --watch",
+    "start": "sergey"
+  },
+  "author": "Carlos V.",
+  "license": "MIT",
+  "dependencies": {
+    "sergey": "^0.0.13"
+  }
+}
