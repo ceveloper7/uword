@@ -1,0 +1,66 @@
+
+/*
+    MediaQueries
+      sm - 0px - 0em
+      md - 768px - 48em
+      lg - 992px - 62em
+      xl - 1200px - 75em
+  */
+
+.layout{
+  display: grid;
+  gap: 0.25rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2rem 4rem 8rem auto 4rem 4rem 4rem;
+  grid-template-areas: 
+      'header'
+      'sidebar-left'
+      'search'
+      'main'
+      'sidebar-right'
+      'books'
+      'footer';
+  height: 100vh;
+}
+
+header{
+  grid-area: header;
+  background: #c08bfd;
+}
+
+.sidebar-left{
+  grid-area: sidebar-left;
+  background: #f6c356;
+}
+
+.search{
+  grid-area: search;
+  background: #ff8983;
+  width: 100%;
+}
+
+main {
+    grid-area: main;
+    background: #B0EE94;
+}
+
+.sidebar-right {
+    grid-area: sidebar-right;
+    background: #f6c356;
+}
+
+.books {
+    grid-area: books;
+    background: #99c2fe;
+    width: 100%;
+}
+
+footer {
+    grid-area: footer;
+    background: #c08bfd;
+}
+
+
+@media screen and (min-width: 48em) {}
+@media screen and (min-width: 62em) {}
+@media screen and (min-width: 75em) {}
