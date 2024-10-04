@@ -391,7 +391,7 @@ th {
 }
 
 .login span{
-  margin-right: 1.6rem;
+  margin-right: 0.4rem;
   position: relative;
   top: -0.4rem
 }
@@ -407,8 +407,8 @@ th {
 }
 
 .left-sidebar div{
-  padding-left: 32px;
-  padding-top: 16px;
+  padding-left: 2rem;
+  padding-top: 1rem;
 }
 
 .left-sidebar svg{
@@ -422,15 +422,63 @@ th {
   align-self: center;
   color: var(--color-bg-alt);
   position: absolute;
-  padding-left: 4px;
+  padding-left: 0.4rem;
 }
 
+.logo span{
+  font-family: var(--font-logo);
+  font-size: 1.5rem;
+}
+
+
+/************** Search Form ********************* */
 
 .search-form-container {
   grid-area: search;
   background: var(--color-light-bg);
   width: 100%;
 }
+
+.search-and-submit{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.search-input{
+  width: 100%;
+  font-size: 1.3rem;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid #b2b2b2;
+}
+
+.search-submit-container{
+  display: inline-block;
+  min-width: auto;
+}
+
+.search-submit{
+  align-items: center;
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  width: 68px;
+  height: 2rem;
+  justify-content: center;
+  margin-left: 0.5rem;
+  margin-right: 0.4rem;
+}
+
+.search-submit-container svg{
+  fill: var(--color-neutro);
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
 
 main {
   grid-area: main;
