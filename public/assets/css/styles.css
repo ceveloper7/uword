@@ -78,7 +78,7 @@
 }
 
 /* ******************** Custom Properties ******************** */
-:root{
+:root {
   /*
     MediaQueries
       sm - 0px - 0em
@@ -92,9 +92,9 @@
   --font-logo-black: "Raleway Black", sans-serif;
   --font-code: "Roboto Mono", Consolas;
 
-  --color-primary: #2D4C71;
-  --color-secondary: #6DA6D5;
-  --color-neutro: #E3E5F1;
+  --color-primary: #2d4c71;
+  --color-secondary: #6da6d5;
+  --color-neutro: #e3e5f1;
 
   --color-light-bg: #fcfcfc;
   --color-light-bg-alt: #f7f7f7;
@@ -120,7 +120,6 @@
     var(--color-dark-link),
     var(--color-light-link)
   );
-
 }
 
 /* ******************** User Prefers ******************** */
@@ -172,8 +171,6 @@ body.light {
   --color-link: var(--color-light-link);
   --color-contrast: var(--color-light-contrast);
 }
-
-
 
 /* ******************** Reset CSS ******************** */
 *,
@@ -361,79 +358,104 @@ th {
 
 /* ******************** Components UI ******************** */
 
-
-
-.layout{
+.layout {
   display: grid;
   gap: 0.25rem;
   grid-template-columns: 1fr;
   grid-template-rows: 2rem 4rem 8rem auto 4rem 4rem 4rem;
-  grid-template-areas: 
-      'header'
-      'left-sidebar'
-      'search'
-      'main'
-      'sidebar-right'
-      'books'
-      'footer';
+  grid-template-areas:
+    "header"
+    "left-sidebar"
+    "search"
+    "main"
+    "sidebar-right"
+    "books"
+    "footer";
   height: 100vh;
 }
 
 /* ******************** Header ******************** */
-.header{
+.header {
   grid-area: header;
   background: var(--color-light-bg);
 }
 
-.login a{
+.login{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.login a {
   text-decoration: none;
 }
 
-.login-text{
-  margin-left:4px;
-  position: absolute;
-  top: 8px;
+.login span{
+  margin-right: 1.6rem;
+  position: relative;
+  top: -0.4rem
 }
 
 
 
-
-
-
-
-.left-sidebar{
+/* *********************** Left Sidebar******************** */
+.left-sidebar {
+  display: flex;
+  flex-direction: column;
   grid-area: left-sidebar;
   background: var(--color-primary);
 }
 
-.search{
+.left-sidebar div{
+  padding-left: 32px;
+  padding-top: 16px;
+}
+
+.left-sidebar svg{
+  fill: var(--color-bg);
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+}
+
+.logo{
+  align-self: center;
+  color: var(--color-bg-alt);
+  position: absolute;
+  padding-left: 4px;
+}
+
+
+.search-form-container {
   grid-area: search;
   background: var(--color-light-bg);
   width: 100%;
 }
 
 main {
-    grid-area: main;
-    background: #B0EE94;
+  grid-area: main;
+  background: #b0ee94;
 }
 
 .sidebar-right {
-    grid-area: sidebar-right;
-    background: #f6c356;
+  grid-area: sidebar-right;
+  background: #f6c356;
 }
 
 .books {
-    grid-area: books;
-    background: #99c2fe;
-    width: 100%;
+  grid-area: books;
+  background: #99c2fe;
+  width: 100%;
 }
 
 footer {
-    grid-area: footer;
-    background: #c08bfd;
+  grid-area: footer;
+  background: #c08bfd;
 }
 
-
-@media screen and (min-width: 48em) {}
-@media screen and (min-width: 62em) {}
-@media screen and (min-width: 75em) {}
+@media screen and (min-width: 48em) {
+}
+@media screen and (min-width: 62em) {
+}
+@media screen and (min-width: 75em) {
+}
