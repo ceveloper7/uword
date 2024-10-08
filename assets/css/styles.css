@@ -414,8 +414,8 @@ th {
 .left-sidebar svg{
   fill: var(--color-bg);
   cursor: pointer;
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
 }
 
 .logo{
@@ -439,12 +439,13 @@ th {
   width: 100%;
 }
 
-.search-and-submit{
+.search-and-submit-container{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: flex-end;
+  margin-left: 0.25rem;
 }
 
 .search-input{
@@ -454,29 +455,36 @@ th {
   border: 1px solid #b2b2b2;
 }
 
-.search-submit-container{
-  display: inline-block;
-  min-width: auto;
-}
+
 
 .search-submit{
   align-items: center;
   background-color: var(--color-primary);
   border: none;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   cursor: pointer;
   display: flex;
-  width: 68px;
-  height: 2rem;
+  width: 4rem;
+  height: 2.6rem;
   justify-content: center;
   margin-left: 0.5rem;
-  margin-right: 0.4rem;
+  margin-right: 0.25rem;
 }
 
-.search-submit-container svg{
+.search-submit svg{
   fill: var(--color-neutro);
-  height: 1.5rem;
   width: 1.5rem;
+}
+
+.search-dropdown-container{
+  margin-top: 0.4rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem; /* 4px */
+}
+
+.search-dropdown{
+  padding: 0.3rem 0.5rem;
+  width: 100%;
 }
 
 
