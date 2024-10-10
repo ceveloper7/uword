@@ -380,7 +380,7 @@ th {
   background: var(--color-light-bg);
 }
 
-.login{
+.login {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -390,13 +390,11 @@ th {
   text-decoration: none;
 }
 
-.login span{
+.login span {
   margin-right: 0.4rem;
   position: relative;
-  top: -0.4rem
+  top: -0.4rem;
 }
-
-
 
 /* *********************** Left Sidebar******************** */
 .left-sidebar {
@@ -406,30 +404,29 @@ th {
   background: var(--color-primary);
 }
 
-.left-sidebar div{
+.left-sidebar div {
   padding-left: 2rem;
   padding-top: 1rem;
 }
 
-.left-sidebar svg{
+.left-sidebar svg {
   fill: var(--color-bg);
   cursor: pointer;
   width: 2rem;
   height: 2rem;
 }
 
-.logo{
+.logo {
   align-self: center;
   color: var(--color-bg-alt);
   position: absolute;
   padding-left: 0.4rem;
 }
 
-.logo span{
+.logo span {
   font-family: var(--font-logo);
   font-size: 1.5rem;
 }
-
 
 /************** Search Form ********************* */
 
@@ -439,7 +436,7 @@ th {
   width: 100%;
 }
 
-.search-and-submit-container{
+.search-and-submit-container {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -448,16 +445,14 @@ th {
   margin-left: 0.25rem;
 }
 
-.search-input{
+.search-input {
   width: 100%;
   font-size: 1.3rem;
   padding: 0.3rem 0.5rem;
   border: 1px solid #b2b2b2;
 }
 
-
-
-.search-submit{
+.search-submit {
   align-items: center;
   background-color: var(--color-primary);
   border: none;
@@ -471,22 +466,39 @@ th {
   margin-right: 0.25rem;
 }
 
-.search-submit svg{
+.search-submit svg {
   fill: var(--color-neutro);
   width: 1.5rem;
 }
 
-.search-dropdown-container{
-  margin-top: 0.4rem;
+.search-dropdown-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.6rem;
+  z-index: 999;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: #000;
+  background: #fff;
+  padding: 0 8px;
+  border: 1px solid #b2b2b2;
+  margin-top: 0.25rem;
   margin-left: 0.25rem;
-  margin-right: 0.25rem; /* 4px */
+  margin-right: 0.5rem;
 }
 
-.search-dropdown{
-  padding: 0.3rem 0.5rem;
-  width: 100%;
+.search-dropdown {
+  display: none;
 }
 
+.search-dropdown-icon{
+  display: flex;
+  align-items: center;
+  padding: 0.25rem 0.5rem 0;
+}
 
 main {
   grid-area: main;
