@@ -500,9 +500,55 @@ th {
   padding: 0.25rem 0.5rem 0;
 }
 
+.search-dropdown-icon svg{
+  fill: var(--color-dark-contrast);
+  
+}
+
+.bible-options{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  padding-left: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.bible-book-dropdown{
+  position: static;
+}
+
+.toggle-bible,
+.toggle-fontsize{
+  color: var(--color-dark-contrast);
+  display: flex;
+  text-decoration: none;
+}
+
+.toggle-bible svg{
+  margin: 0.25rem 0 0 0.5rem;
+  align-self: center;
+  fill: var(--color-dark-contrast);
+}
+
+.fontsize-dropdown{
+  position: relative;
+}
+
+.toggle-fontsize svg{
+ 
+  margin: 0.25rem 0.5rem 0 0.5rem;
+}
+
+hr.content-divider{
+  border: 0;
+  border-top: 0.125rem solid #2d4c71;
+  margin: 0;
+  
+}
+
 main {
   grid-area: main;
-  background: #b0ee94;
+  
 }
 
 .sidebar-right {
