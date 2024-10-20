@@ -380,20 +380,41 @@ th {
   background: var(--color-light-bg);
 }
 
-.login {
+.icons {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  flex-direction: row;
+  justify-content: end;
 }
 
-.login a {
+.icons a {
   text-decoration: none;
 }
 
-.login span {
-  margin-right: 0.4rem;
+.icons span {
+  margin-right: 0.25rem;
   position: relative;
   top: -0.4rem;
+}
+
+.theme-container{
+  margin: 0.20rem 0.25rem 0.20rem 1rem;
+}
+
+.icons button {
+  margin: 0 var(--step-2);
+}
+
+.theme-toggle {
+  border: 0;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: var(--color-contrast);
+  transition: all 0.3s ease-in-out;
 }
 
 /* *********************** Left Sidebar******************** */
@@ -494,18 +515,17 @@ th {
   display: none;
 }
 
-.search-dropdown-icon{
+.search-dropdown-icon {
   display: flex;
   align-items: center;
   padding: 0.25rem 0.5rem 0;
 }
 
-.search-dropdown-icon svg{
+.search-dropdown-icon svg {
   fill: var(--color-dark-contrast);
-  
 }
 
-.bible-options{
+.bible-options {
   display: flex;
   justify-content: space-between;
   margin-top: 0.5rem;
@@ -513,42 +533,39 @@ th {
   padding-bottom: 0.25rem;
 }
 
-.bible-book-dropdown{
+.bible-book-dropdown {
   position: static;
 }
 
 .toggle-bible,
-.toggle-fontsize{
+.toggle-fontsize {
   color: var(--color-dark-contrast);
   display: flex;
   text-decoration: none;
 }
 
-.toggle-bible svg{
+.toggle-bible svg {
   margin: 0.25rem 0 0 0.5rem;
   align-self: center;
   fill: var(--color-dark-contrast);
 }
 
-.fontsize-dropdown{
+.fontsize-dropdown {
   position: relative;
 }
 
-.toggle-fontsize svg{
- 
+.toggle-fontsize svg {
   margin: 0.25rem 0.5rem 0 0.5rem;
 }
 
-hr.content-divider{
+hr.content-divider {
   border: 0;
   border-top: 0.125rem solid #2d4c71;
   margin: 0;
-  
 }
 
 main {
   grid-area: main;
-  
 }
 
 .sidebar-right {
