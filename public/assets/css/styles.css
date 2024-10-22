@@ -360,9 +360,10 @@ th {
 
 .layout {
   display: grid;
+  min-height: 100dvh;
   gap: 0.25rem;
   grid-template-columns: 1fr;
-  grid-template-rows: 2rem 4rem 8rem auto 4rem 4rem 4rem;
+  grid-template-rows: auto auto auto 1fr auto auto auto;
   grid-template-areas:
     "header"
     "left-sidebar"
@@ -371,7 +372,7 @@ th {
     "sidebar-right"
     "books"
     "footer";
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 /* ******************** Header ******************** */
@@ -570,18 +571,18 @@ main {
 
 .sidebar-right {
   grid-area: sidebar-right;
-  background: #f6c356;
+  /* background: #f6c356; */
 }
 
 .books {
   grid-area: books;
-  background: #99c2fe;
+  /* background: #99c2fe; */
   width: 100%;
 }
 
 footer {
   grid-area: footer;
-  background: #c08bfd;
+  /* background: #c08bfd; */
 }
 
 @media screen and (min-width: 48em) {
