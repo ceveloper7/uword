@@ -203,7 +203,10 @@ body {
 
   background-color: var(--color-bg);  
   color: var(--color-text);
+  
 }
+
+
 
 a {
   color: var(--color-link);
@@ -432,7 +435,7 @@ th {
 }
 
 .left-sidebar svg {
-  fill: var(--color-bg);
+  fill: var(--color-neutro);
   cursor: pointer;
   width: 2rem;
   height: 2rem;
@@ -440,7 +443,6 @@ th {
 
 .logo {
   align-self: center;
-  color: var(--color-bg-alt);
   position: absolute;
   padding-left: 0.4rem;
 }
@@ -448,6 +450,10 @@ th {
 .logo span {
   font-family: var(--font-logo);
   font-size: 1.5rem;
+}
+
+.logo-text{
+  color: var(--color-neutro);
 }
 
 /************** Search Form ********************* */

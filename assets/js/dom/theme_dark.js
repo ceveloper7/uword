@@ -1,5 +1,6 @@
 export default function themeDark (d, w, ls) { 
   const $btn = d.querySelector(".theme-toggle");
+  const $logo_text = d.querySelector(".logo");
   let prefersDark = w.matchMedia("(prefers-color-scheme: dark)").matches,
     lightIcon = `
         <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -18,6 +19,7 @@ export default function themeDark (d, w, ls) {
     ls.setItem("theme", "light");
     d.body.classList.add("light");
     d.body.classList.remove("dark");
+    $logo_text.classList.add("logo-text");
     $btn.innerHTML = lightIcon;
   }
 
