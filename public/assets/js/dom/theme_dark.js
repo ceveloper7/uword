@@ -1,6 +1,8 @@
 export default function themeDark (d, w, ls) { 
   const $btn = d.querySelector(".theme-toggle");
   const $logo_text = d.querySelector(".logo");
+  const $toggle_bible_icon = d.querySelector(".toggle-icon-1");
+  const $toggle_fontsize_icon = d.querySelector(".toggle-icon-2");
   let prefersDark = w.matchMedia("(prefers-color-scheme: dark)").matches,
     lightIcon = `
         <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -20,6 +22,10 @@ export default function themeDark (d, w, ls) {
     d.body.classList.add("light");
     d.body.classList.remove("dark");
     $logo_text.classList.add("logo-text");
+    $toggle_bible_icon.classList.add("toggle-bible-icon-light");
+    $toggle_fontsize_icon.classList.add("toggle-fontsize-icon-light");
+    $toggle_bible_icon.classList.remove("toggle-bible-icon-dark");
+    $toggle_fontsize_icon.classList.remove("toggle-fontsize-icon-dark");
     $btn.innerHTML = lightIcon;
   }
 
@@ -27,6 +33,10 @@ export default function themeDark (d, w, ls) {
     ls.setItem("theme", "dark");
     d.body.classList.remove("light");
     d.body.classList.add("dark");
+    $toggle_bible_icon.classList.add("toggle-bible-icon-dark");
+    $toggle_fontsize_icon.classList.add("toggle-fontsize-icon-dark");
+    $toggle_bible_icon.classList.remove("toggle-bible-icon-light");
+    $toggle_fontsize_icon.classList.remove("toggle-fontsize-icon-light");
     $btn.innerHTML = darkIcon;
   }
 

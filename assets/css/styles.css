@@ -5,7 +5,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(fonts/raleway-400.woff2) format("woff2");
+  src: url(../../fonts/raleway-400.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
     U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
     U+FEFF, U+FFFD;
@@ -16,7 +16,7 @@
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: url(fonts/raleway-900.woff2) format("woff2");
+  src: url(../../fonts/raleway-900.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
     U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
     U+FEFF, U+FFFD;
@@ -27,7 +27,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(fonts/roboto-mono-400.woff2) format("woff2");
+  src: url(../../fonts/roboto-mono-400.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
     U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
     U+FEFF, U+FFFD;
@@ -38,7 +38,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(fonts/pt-sans-regular.woff2) format("woff2");
+  src: url(../../fonts/pt-sans-regular.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
     U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
     U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
@@ -49,7 +49,7 @@
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url(fonts/pt-sans-italic.woff2) format("woff2");
+  src: url(../../fonts/pt-sans-italic.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
     U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
     U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
@@ -60,7 +60,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(fonts/pt-sans-bold.woff2) format("woff2");
+  src: url(../../fonts/pt-sans-bold.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
     U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
     U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
@@ -71,7 +71,7 @@
   font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: url(fonts/pt-sans-bold-italic.woff2) format("woff2");
+  src: url(../../fonts/pt-sans-bold-italic.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
     U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
     U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
@@ -429,8 +429,8 @@ th {
   background: var(--color-primary);
 }
 
-.left-sidebar div {
-  padding-left: 2rem;
+.menu-icon {
+  padding-left: 1rem;
   padding-top: 1rem;
 }
 
@@ -445,6 +445,7 @@ th {
   align-self: center;
   position: absolute;
   padding-left: 0.4rem;
+  padding-top: 1rem;
 }
 
 .logo span {
@@ -546,7 +547,7 @@ th {
 
 .toggle-bible,
 .toggle-fontsize {
-  color: var(--color-dark-contrast);
+  /* color: var(--color-dark-contrast); */
   display: flex;
   text-decoration: none;
 }
@@ -554,7 +555,6 @@ th {
 .toggle-bible svg {
   margin: 0.25rem 0 0 0.5rem;
   align-self: center;
-  fill: var(--color-dark-contrast);
 }
 
 .fontsize-dropdown {
@@ -563,6 +563,16 @@ th {
 
 .toggle-fontsize svg {
   margin: 0.25rem 0.5rem 0 0.5rem;
+}
+
+.toggle-bible-icon-light,
+.toggle-fontsize-icon-light{
+  fill: var(--color-dark-bg);
+}
+
+.toggle-bible-icon-dark,
+.toggle-fontsize-icon-dark{
+  fill: var(--color-neutro);
 }
 
 hr.content-divider {
